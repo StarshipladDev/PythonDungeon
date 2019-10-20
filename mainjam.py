@@ -37,10 +37,10 @@ class MainProcess:#At the current moment, I cannot think of any reason I woudl n
        self.player_health=StringVar()#Not acctualy player.health,just the Strign value to dispaly under player's avatar. Is changed whenever the player.health is affected
        self.player_health.set("Health:"+str(player.health))
        self.eventnumber.set(0)#Ghost code
-       self.face1=PhotoImage(file="face1.GIF")
-       self.face2=PhotoImage(file="face2.GIF")#These sections simply load the in file images for later use
-       self.face3=PhotoImage(file="face3.GIF")
-       self.face4=PhotoImage(file="face4.GIF")
+       self.face1=PhotoImage(file="C:\Users\Lavoy\Documents\Code\Python\Breif and Log/face1.gif")
+       self.face2=PhotoImage(file="C:\Users\Lavoy\Documents\Code\Python\Breif and Log/face2.gif")#These sections simply load the in file images for later use
+       self.face3=PhotoImage(file="C:\Users\Lavoy\Documents\Code\Python\Breif and Log/face3.gif")
+       self.face4=PhotoImage(file="C:\Users\Lavoy\Documents\Code\Python\Breif and Log/face4.gif")
        self.maintext=Label(parent,text="Welcome to Adventure Simulator 2015. You need to locate a key, take the magical door out of here, and stay alive. Good luck",wraplength=350,bg="olive drab",)
        #^is probably the most important component. This is the text that the User will get-
        #-information about what is occurring from.
@@ -175,15 +175,15 @@ class MainProcess:#At the current moment, I cannot think of any reason I woudl n
       #moNSter shows up-Crete introduction text, change option buttosn to suitable options, create a isntacne of enemy fro ma selection
      #of prefab monster stats.
       if type_of_event==1:
-         self.monster_type= randrange(0,5)
-         if self.monster_type==1:
+         self.monster_type= randrange(0,500)
+         if self.monster_type>400:
             self.monster=Enemy("Goblin",6,3,30)
-         elif self.monster_type==2:
+         elif self.monster_type>300:
                self.monster=Enemy("Orc",8,4,50)
                
-         elif self.monster_type==3 or self.monster_type==4:
+         elif self.monster_type>50:
             Enemy("Ratman",4,2,10)
-         else:self.monster=Enemy("KALEB THE BIG FUCKIGN FAGGOT",20,16,50000000000000)
+         else:self.monster=Enemy("BROKEN AMMOUNT OF GOLD SECRET CREATURE",20,16,50000000000000)
          self.maintext.configure(text="You see a "+self.monster.name +" appear in front of you")
          self.option1.configure(image="",text="attack it",command=self.attack)
          self.option2.configure(image="",text="run away",command=self.flee)

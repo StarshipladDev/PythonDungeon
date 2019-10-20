@@ -1,19 +1,15 @@
-# Mainjam TExtbased Dungeon Crawler
+# Mainjam Textbased Dungeon Crawler
 This is a simple python script I created back in 2015.
 Attatched are the unedited logs and 
 
 # Features
 **Current Features**:
 
-Disabled auto-power off
+Character Image / name selector
 
-2 players have UI's facing each of them
+Randomized combat stats
 
-Coin object in centre of screen allows computer to determine starting player
-
-Players can add/subtract their own health as gameplay progresses
-
-Ability to add/remove various counters to represent token creatures/ +1/+1 counters
+Simple win objectives.
 
 # Latest Upload
 21/10/2019 -
@@ -24,4 +20,6 @@ Uploaded unedited project in full
 
 Download all files as a .ZIP. extract, then run the 'mainjam.py' from the folder containing the log, .gifs and mainjam.py file.
 To run python scripts, see the following link https://realpython.com/run-python-scripts/
+The iamge refrences will need to be cahnges to the full address in the .py file.
+If using python 2.x , you will need to change import tkinter into import Tkinter
 

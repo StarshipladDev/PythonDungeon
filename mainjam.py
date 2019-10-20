@@ -11,7 +11,7 @@ Horrible commenting will be left as is.
 #IntVar(),StringVar(),Label, font= ("font,size"), Var.set(set),textvariable,randrange()
 #import n
 #needed moduels
-from tkinter import *
+from Tkinter import *
 from random import *
 class PlayerClass:                  #defines the player class and all his attributes.- Will be called apoun during combat equation, buying stuff, and health.
    
@@ -37,10 +37,10 @@ class MainProcess:#At the current moment, I cannot think of any reason I woudl n
        self.player_health=StringVar()#Not acctualy player.health,just the Strign value to dispaly under player's avatar. Is changed whenever the player.health is affected
        self.player_health.set("Health:"+str(player.health))
        self.eventnumber.set(0)#Ghost code
-       self.face1=PhotoImage(file="face1.gif")
-       self.face2=PhotoImage(file="face2.gif")#These sections simply load the in file images for later use
-       self.face3=PhotoImage(file="face3.gif")
-       self.face4=PhotoImage(file="face4.gif")
+       self.face1=PhotoImage(file="face1.GIF")
+       self.face2=PhotoImage(file="face2.GIF")#These sections simply load the in file images for later use
+       self.face3=PhotoImage(file="face3.GIF")
+       self.face4=PhotoImage(file="face4.GIF")
        self.maintext=Label(parent,text="Welcome to Adventure Simulator 2015. You need to locate a key, take the magical door out of here, and stay alive. Good luck",wraplength=350,bg="olive drab",)
        #^is probably the most important component. This is the text that the User will get-
        #-information about what is occurring from.
